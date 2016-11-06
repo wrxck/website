@@ -21,11 +21,11 @@ body, figure, h2, h3, h4, h5, h6 {
 h1 {
 	font-family: BelloPro;
 	font-weight: 400;
-	color: #000;
 }
 body {
 	font-size: 16px;
 	line-height: 1.7;
+	color: #fff;
 	background: #333;
 }
 #page {
@@ -424,7 +424,7 @@ form label {
 .matthewhesketh-cover .display-tc h2 {
 	margin: 0;
 	padding: 0;
-	color: #fff;
+	color: #000;
 }
 #matthewhesketh-header .display-tc h1,
 .matthewhesketh-cover .display-tc h1 {
