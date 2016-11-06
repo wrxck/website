@@ -117,54 +117,169 @@ figure, h1, h2, h3, h4, h5, h6 {
 		display: none;
 	}
 }
-.mh-nav #logo {
+.mh-nav #mh-logo {
 	font-size: 20px;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
 	font-weight: 700;
 }
-#logo:hover {
+#mh-logo:hover {
 	color: #d6d8df;
 }
+.mh-nav #mh-logo em {
+	color: #1d2b53;
+}
+.mh-nav a {
+	padding: 5px 10px;
+	color: #fff;
+}
+.mh-nav ul {
+	padding: 0;
+	margin: 2px 0 0;
+}
+.mh-nav ul li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline;
+}
+.mh-nav ul li a {
+	font-size: 16px;
+	padding: 30px 10px;
+	color: rgba(255, 255, 255, .5);
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+.mh-nav ul li a:active, .mh-nav ul li a:focus, .mh-nav ul li a:hover {
+	color: #fff;
+}
+.mh-nav ul li.has-dropdown {
+	position: relative;
+}
+.mh-nav ul li.has-dropdown .dropdown {
+	width: 130px;
+	-webkit-box-shadow: 0 2px 2.5px 0 rgba(0, 0, 0, .15);
+	-moz-box-shadow: 0 2px 2.5px 0 rgba(0, 0, 0, .15);
+	box-shadow: 0 2px 2.5px 0 rgba(0, 0, 0, .15);
+	z-index: 1002;
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	text-align: left;
+	background: #fff;
+	padding: 20px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: 0s;
+	-o-transition: 0s;
+	transition: 0s;
+}
+.mh-nav ul li.has-dropdown .dropdown:before {
+	bottom: 100%;
+	left: 40px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #fff;
+	border-width: 8px;
+	margin-left: -8px;
+}
+.mh-nav ul li.has-dropdown .dropdown li {
+	display: block;
+	margin-bottom: 7px;
+}
+.mh-nav ul li.has-dropdown .dropdown li:last-child {
+	margin-bottom: 0;
+}
+.mh-nav ul li.has-dropdown .dropdown li a {
+	padding: 2px 0;
+	display: block;
+	color: #999;
+	line-height: 1.2;
+	text-transform: none;
+	font-size: 15px;
+}
+.mh-nav ul li.has-dropdown .dropdown li a:hover {
+	color: #000;
+}
+.mh-nav ul li.has-dropdown .dropdown li.active>a {
+	color: #000!important;
+}
+.mh-nav ul li.has-dropdown:focus a, .mh-nav ul li.has-dropdown:hover a {
+	color: #fff;
+}
+.mh-nav ul li.btn-cta a {
+	color: #1d2b53;
+}
+.mh-nav ul li.btn-cta a span {
+	background: #fff;
+	padding: 4px 20px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	border-radius: 100px;
+}
+.mh-nav ul li.btn-cta a:hover span {
+	-webkit-box-shadow: 0 14px 20px -9px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 0 14px 20px -9px rgba(0, 0, 0, .75);
+	box-shadow: 0 14px 20px -9px rgba(0, 0, 0, .75);
+}
+.mh-nav ul li.active>a {
+	color: #fff!important;
+}
 @media screen and (max-width: 480px) {
-	#header .text-left {
+	#mh-header .text-left {
 		text-align: center!important;
 	}
-	#header .btn {
+	#mh-header .btn {
 		display: block;
 		width: 100%;
 	}
 }
-#header, .mh-bg {
+#mh-header, .mh-bg {
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
 	position: relative;
 }
-.mh-bg, .cover {
+.mh-bg, .mh-cover {
 	background-position: center center;
 	position: relative;
 	width: 100%;
 	float: left;
 }
-#header, #mh-subscribe, v {
+#mh-header, #mh-nav, #mh-subscribe, .mh-nav {
 	-webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, .75);
 	-moz-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, .75);
 	box-shadow: 0 5px 30px -5px rgba(0, 0, 0, .75);
 }
-.cover {
+.mh-cover {
 	height: 900px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.cover a {
+.mh-cover a {
 	color: #1d2b53;
 }
-.cover a:hover {
+.mh-cover a:hover {
 	color: #fff;
 }
-.cover .overlay {
+.mh-cover .overlay {
 	z-index: 1;
 	position: absolute;
 	bottom: 0;
@@ -173,62 +288,62 @@ figure, h1, h2, h3, h4, h5, h6 {
 	right: 0;
 	background: rgba(29, 43, 83, .9);
 }
-.cover>.mh-container {
+.mh-cover>.mh-container {
 	position: relative;
 	z-index: 10;
 }
 @media screen and (max-width: 768px) {
-	.cover {
+	.mh-cover {
 		height: 600px;
 	}
 }
-.cover .display-t, .cover .display-tc {
+.mh-cover .display-t, .mh-cover .display-tc {
 	height: 900px;
 	display: table;
 	width: 100%;
 }
-.cover.cover-sm {
+.mh-cover.mh-cover-sm {
 	height: 600px;
 }
 @media screen and (max-width: 768px) {
-	.cover .display-t,
-	.cover .display-tc {
+	.mh-cover .display-t,
+	.mh-cover .display-tc {
 		height: 600px;
 	}
-	.cover.cover-sm {
+	.mh-cover.mh-cover-sm {
 		height: 400px;
 	}
 }
-.cover.cover-sm .display-t,
-.cover.cover-sm .display-tc {
+.mh-cover.mh-cover-sm .display-t,
+.mh-cover.mh-cover-sm .display-tc {
 	height: 600px;
 	display: table;
 	width: 100%;
 }
 @media screen and (max-width: 768px) {
-	.cover.cover-sm .display-t,
-	.cover.cover-sm .display-tc {
+	.mh-cover.mh-cover-sm .display-t,
+	.mh-cover.mh-cover-sm .display-tc {
 		height: 400px;
 	}
 }
-.cover.cover-xs {
+.mh-cover.mh-cover-xs {
 	height: 500px;
 }
 @media screen and (max-width: 768px) {
-	.cover.cover-xs {
+	.mh-cover.mh-cover-xs {
 		height: inherit !important;
 		padding: 3em 0;
 	}
 }
-.cover.cover-xs .display-t,
-.cover.cover-xs .display-tc {
+.mh-cover.mh-cover-xs .display-t,
+.mh-cover.mh-cover-xs .display-tc {
 	height: 500px;
 	display: table;
 	width: 100%;
 }
 @media screen and (max-width: 768px) {
-	.cover.cover-xs .display-t,
-	.cover.cover-xs .display-tc {
+	.mh-cover.mh-cover-xs .display-t,
+	.mh-cover.mh-cover-xs .display-tc {
 		padding: 3em 0;
 		height: inherit !important;
 	}
@@ -300,32 +415,32 @@ figure, h1, h2, h3, h4, h5, h6 {
 form label {
 	font-weight: 400 !important;
 }
-#mh-counter .display-tc, #header .display-tc, .cover .display-tc {
+#mh-counter .display-tc, #mh-header .display-tc, .mh-cover .display-tc {
 	display: table-cell !important;
 	vertical-align: middle;
 }
-#header .display-tc h1,
-#header .display-tc h2,
-.cover .display-tc h1,
-.cover .display-tc h2 {
+#mh-header .display-tc h1,
+#mh-header .display-tc h2,
+.mh-cover .display-tc h1,
+.mh-cover .display-tc h2 {
 	margin: 0;
 	padding: 0;
 	color: #fff;
 }
-#header .display-tc h1,
-.cover .display-tc h1 {
+#mh-header .display-tc h1,
+.mh-cover .display-tc h1 {
 	margin-bottom: 0;
 	font-size: 59px;
 	line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
-	#header .display-tc h1, .cover .display-tc h1 {
+	#mh-header .display-tc h1, .mh-cover .display-tc h1 {
 		font-size: 34px;
 		line-height: 1.2;
 		margin-bottom: 10px;
 	}
 }
-#header .display-tc h2, .cover .display-tc h2 {
+#mh-header .display-tc h2, .mh-cover .display-tc h2 {
 	font-size: 22px;
 	line-height: 1.5;
 	margin-bottom: 30px;
