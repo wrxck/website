@@ -1151,8 +1151,8 @@ form label {
 	transition-property: transform;
 }
 .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
-	-webkit-transform: scale(0.9);
-	transform: scale(0.9);
+	-webkit-transform: scale(.9);
+	transform: scale(.9);
 }
 .hvr-glow {
 	display: inline-block;
