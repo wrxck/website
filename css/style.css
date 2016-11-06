@@ -14,11 +14,11 @@ a {
 	-webkit-transition: .5s;
 	-o-transition: .5s
 }
-body, figure, h2, h3, h4, h5, h6 {
+body, figure, h3, h4, h5, h6 {
 	font-family: Roboto, sans-serif;
 	font-weight: 400;
 }
-h1 {
+h1, h2 {
 	font-family: BelloPro;
 	font-weight: 400;
 }
