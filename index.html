@@ -26,7 +26,23 @@
 	<body>
 		<div class='matthewhesketh-loader'></div>
 		<div id='page'>
-		<header id='matthewhesketh-header' role='banner' style='background-color:#fff;'>
+		<nav class='matthewhesketh-nav' role='navigation'>
+			<div class='matthewhesketh-container'>
+				<div class='row'>
+					<div class='col-sm-4 col-xs-12'>
+						<div id='matthewhesketh-logo'><a href='http://www.matthewhesketh.com'>Matthew Hesketh</a></div>
+					</div>
+					<div class='col-xs-8 text-right menu-1'>
+						<ul>
+							<li class='active'><a href='http://www.matthewhesketh.com'>Home</a></li>
+							<li><a href='https://github.com/matthewhesketh'>GitHub</a></li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+		</nav>
+		<header id='matthewhesketh-header' class='matthewhesketh-cover' role='banner' style='background-image:url(images/bg.jpg);'>
 			<div class='overlay'></div>
 			<div class='matthewhesketh-container'>
 				<div class='row'>
@@ -41,7 +57,7 @@
 				</div>
 			</div>
 		</header>
-		<div id='matthewhesketh-subscribe'>
+		<div id='matthewhesketh-features'>
 			<div class='matthewhesketh-container'>
 				<div class='row'>
 					<div class='col-md-8 col-md-offset-2 text-center matthewhesketh-heading animate-box'>
@@ -67,6 +83,37 @@
 							<h3><a href='https://github.com/matthewhesketh/matticate'>matticate</a></h3>
 							<p>A powerful administration bot for Telegram, written in Lua.</p>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='matthewhesketh-subscribe'>
+			<div class='matthewhesketh-container'>
+				<div class='row animate-box'>
+					<div class='col-md-8 col-md-offset-2 text-center matthewhesketh-heading'>
+						<h2>Subscribe</h2>
+						<p>Be the first to know about my new projects.</p>
+					</div>
+				</div>
+				<div class='row animate-box'>
+					<div class='col-md-12'>
+						<form class='form-inline'>
+							<div class='col-md-4 col-sm-4'>
+								<div class='form-group'>
+									<label for='email' class='sr-only'>Email</label>
+									<input type='email' class='form-control' id='email' placeholder='Your Email'>
+								</div>
+							</div>
+							<div class='col-md-4 col-sm-4'>
+								<div class='form-group'>
+									<label for='name' class='sr-only'>Name</label>
+									<input type='text' class='form-control' id='name' placeholder='Your Name'>
+								</div>
+							</div>
+							<div class='col-md-4 col-sm-4'>
+								<button type='submit' class='btn btn-default btn-block hvr-glow'>Subscribe</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
